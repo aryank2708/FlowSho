@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# FlowSho
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Turn your n8n workflow into a live, animated demo — in seconds.**
 
-## Available Scripts
+FlowSho takes any n8n workflow JSON and transforms it into a beautiful, interactive flowchart with a step-by-step animated demo. Built for founders, operators, and automation builders who want to show clients exactly how their automations work — without the technical noise.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+![FlowSho Home](docs/home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Instant Visualisation** — Paste your n8n JSON and get a fully rendered flowchart immediately
+- **Live Demo Mode** — Animate through every node step by step, with human-readable output at each stage
+- **Multi-Workflow Support** — Upload interconnected workflows and watch them trigger each other in real time
+- **Demo Summary** — After each run, a summary modal shows exactly what happened at every step
+- **Cross-Workflow Trigger Detection** — Automatically detects HTTP calls between workflows and animates the handoff
+- **Share Links** — Generate a shareable URL that loads your workflow instantly for anyone
+- **No signup. No backend. No data leaves your browser.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Home — Upload or try an example
+![Home Screen](docs/home.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Single Workflow — Live animated demo
+![Single Workflow Demo](docs/demo.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Multi-Workflow — Interconnected system running end to end
+![Multi Workflow](docs/multi.png)
 
-### `npm run eject`
+### Summary — What happened in this demo
+![Summary Modal](docs/summary.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Export your workflow from n8n as JSON
+2. Upload the file or paste the JSON into FlowSho
+3. Hit **Run Demo** and watch every node animate in execution order
+4. Share the link with your client
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For multi-workflow systems, FlowSho detects which HTTP Request nodes call other webhook-triggered workflows and animates the cross-workflow handoff automatically.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/aryank2708/FlowSho.git
+cd FlowSho
+npm install
+npm start
+```
 
-### Code Splitting
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 19 |
+| Flow Rendering | React Flow (v11) |
+| Styling | Inline CSS (no external UI lib) |
+| AI Summary | OpenAI GPT-4o-mini (optional) |
+| Deployment | Vercel |
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+```
+src/
+  App.js          # Entire application — components, logic, demo engine
+public/
+  index.html      # HTML shell with OG meta tags
+docs/
+  *.png           # Screenshots used in this README
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [ ] Figma-style export (PNG / SVG)
+- [ ] Embeddable iframe mode
+- [ ] Custom node branding / colours
+- [ ] Execution speed control
+- [ ] Support for other automation platforms (Make, Zapier)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+MIT — free to use, fork, and build on.
+
+---
+
+Built by [@aryank2708](https://github.com/aryank2708)
