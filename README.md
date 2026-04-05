@@ -10,7 +10,7 @@ FlowSho takes any n8n workflow JSON and transforms it into a beautiful, interact
 
 ---
 
-![FlowSho Home](docs/home.png)
+<img width="1680" height="960" alt="image" src="https://github.com/user-attachments/assets/3ff47cd9-cf01-4f81-93bc-3a31983e114f" />
 
 ---
 
@@ -29,16 +29,16 @@ FlowSho takes any n8n workflow JSON and transforms it into a beautiful, interact
 ## Screenshots
 
 ### Home — Upload or try an example
-![Home Screen](docs/home.png)
+<img width="1680" height="960" alt="image" src="https://github.com/user-attachments/assets/45858950-fbb1-45ce-bf90-f7d79679d68b" />
 
 ### Single Workflow — Live animated demo
-![Single Workflow Demo](docs/demo.png)
+<img width="1680" height="694" alt="image" src="https://github.com/user-attachments/assets/d94ec406-29b1-459f-aab2-2fdf32a054af" />
 
 ### Multi-Workflow — Interconnected system running end to end
-![Multi Workflow](docs/multi.png)
+<img width="1679" height="957" alt="image" src="https://github.com/user-attachments/assets/9f90fd52-10ec-4045-8fc1-6d2727d89aad" />
 
 ### Summary — What happened in this demo
-![Summary Modal](docs/summary.png)
+<img width="1669" height="959" alt="image" src="https://github.com/user-attachments/assets/13a1c39d-d1c5-4cfa-a9c6-550e1f26c3e9" />
 
 ---
 
