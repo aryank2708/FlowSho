@@ -1,5 +1,9 @@
 # FlowSho
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-flowsho.vercel.app-6366f1?style=for-the-badge&logo=vercel)](https://flowsho.vercel.app)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
 **Turn your n8n workflow into a live, animated demo — in seconds.**
 
 FlowSho takes any n8n workflow JSON and transforms it into a beautiful, interactive flowchart with a step-by-step animated demo. Built for founders, operators, and automation builders who want to show clients exactly how their automations work — without the technical noise.
@@ -103,4 +107,4 @@ MIT — free to use, fork, and build on.
 
 ---
 
-Built by [@aryank2708](https://github.com/aryank2708)
+Built by [@aryank2708](https://github.com/aryank2708) · [flowsho.vercel.app](https://flowsho.vercel.app)
